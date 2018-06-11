@@ -1,7 +1,7 @@
 
-git remote add origin https://github.com/mathmatical/website
+git remote add origin https://github.com/mathmatical/<repo>
 #creates the following in the .git/config file
 #[remote "origin"]
-#        url = git@github.com:mathmatical/website.git
+#        url = git@github.com:mathmatical/<repo>.git
 #        fetch = +refs/heads/*:refs/remotes/origin/*
 
