@@ -1,0 +1,21 @@
+#1#
+#list all input devices
+
+xinput list
+
+#2#
+#list properites of an input device
+
+#i.e. xinput list-props "TPPS/2 IBM TrackPoint"
+xinput list-props "<input device>"
+
+#3#
+#change the value of the properties of an input device
+
+#i.e. xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Left Handed Enabled" 1
+# will override the mouse buttons above touchpad
+# useful, as kde in fedora does not handle the "mouse click emulation" correctly for left handed.  This
+# still maps to right handed user, thus, 1 tap on the touchpad will emulate a right click.
+# Changing the mouse setting to right handed, and running xinput set-prop command to enable left handed, fixes the
+# emulation of tapping
+xinput set-prop "<input device>" "<property>" <value>
