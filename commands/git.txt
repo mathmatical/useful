@@ -8,3 +8,11 @@ git remote add origin https://github.com/mathmatical/<repo>
 #        url = git@github.com:mathmatical/<repo>.git
 #        fetch = +refs/heads/*:refs/remotes/origin/*
 
+
+
+#used to allow ssh identity when push is set for ssh
+[myoder@mathmatical commands]$ eval "$(ssh-agent -s)"
+Agent pid 4509
+[myoder@mathmatical commands]$ ssh-add ~/.ssh/bucket_rsa
+Identity added: /home/myoder/.ssh/bucket_rsa (/home/myoder/.ssh/bucket_rsa)
+
