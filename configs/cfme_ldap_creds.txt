@@ -1,0 +1,16 @@
+Authentication:{
+	Session Timeout : 1h.0m
+	Mode : LDAP
+}
+LDAP Settings:{
+	LDAP Host Names: 10.13.145.119,
+	LDAP Port: 389,
+	User Type: User Principal Name,
+	User Suffix:<user>@: ad.example.com,
+	}
+Role Settings:{
+	Get User Groups from Ldap : true
+	Get Role from Home Forest : true
+	Base DN : ou=CFME,dc=ad,dc=example,dc=int
+	Bind DN : cn=svc-ldap,ou=CFME,dc=ad,dc=example,dc=int
+}
