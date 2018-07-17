@@ -3,7 +3,7 @@ Authentication:{
 	Mode : LDAP
 }
 LDAP Settings:{
-	LDAP Host Names: 10.13.145.119,
+	LDAP Host Names: 10.13.153.55,
 	LDAP Port: 389,
 	User Type: User Principal Name,
 	User Suffix:<user>@: ad.example.com,
